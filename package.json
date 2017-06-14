@@ -1,0 +1,38 @@
+{
+  "name": "phaser-template",
+  "version": "1.0.0",
+  "description": "A template for quick-starting phaser games",
+  "main": "server.js",
+  "scripts": {
+    "gulp": "gulp",
+    "watch": "watchify lib/js/app.js -o public/js/bundle.js -v",
+    "build" : "browserify lib/js/app.js -o public/js/bundle.js",
+    "test": "mocha tests",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SPHornsby/phaser-template.git"
+  },
+  "keywords": [
+    "phaser",
+    "template"
+  ],
+  "author": "Sean Hornsby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SPHornsby/phaser-template/issues"
+  },
+  "homepage": "https://github.com/SPHornsby/phaser-template#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^4.3.1",
+    "gulp-util": "^3.0.8",
+    "mocha": "^3.4.2",
+    "watchify": "^3.9.0"
+  }
+}
