@@ -6,6 +6,8 @@ Tests are written with Chai's assert library.
 
 Uses Browserify to include node-style requires in browser code.
 
+`git clone https://github.com/SPHornsby/phaser-template`
+
 run `npm install` to load dependencies.
 
 `npm run gulp`  will launch the test watcher.
