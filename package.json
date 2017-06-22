@@ -6,9 +6,9 @@
   "scripts": {
     "gulp": "gulp",
     "watch": "watchify lib/js/app.js -o public/js/bundle.js -v",
-    "build" : "browserify lib/js/app.js -o public/js/bundle.js",
+    "build": "browserify lib/js/app.js -o public/js/bundle.js",
     "test": "mocha tests",
-    "start": "node server.js"
+    "start": "npm run build && nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/SPHornsby/phaser-template#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "nodemon": "^1.11.0"
   },
   "devDependencies": {
     "browserify": "^14.4.0",
